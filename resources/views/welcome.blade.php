@@ -81,18 +81,25 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel - Socialite
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <a href="{{ url('/auth/facebook/redirect/') }}" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="{{ url('/auth/twitter/redirect/') }}" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="{{ url('/auth/google/redirect/') }}" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fab fa-google-plus-square"></i>
+                </a>
+                <a href="{{ url('/auth/github/redirect/') }}" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="{{ url('/auth/linkedin/redirect/') }}" class="btn btn-just-icon btn-link btn-white">
+                    <i class="fab fa-linkedin"></i>
+                </a>
                 </div>
             </div>
         </div>

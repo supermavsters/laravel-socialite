@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Auth
+Route::group(['prefix' => 'auth'], function () {
+    Route::get('{provider}/redirect', 'SocialController@redirect'); // Link <A>
+    Route::get('{provider}/callback', 'SocialController@callback'); // Callback
+});
